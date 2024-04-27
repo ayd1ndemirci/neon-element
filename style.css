@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Neon Glow";
+  src: url(https://assets.codepen.io/230569/NeonGlow-8VLz.ttf);
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #101010;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.liquids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hg {
+  align-items: center;
+  border-radius: 12px;
+  border: 4px solid #c0c0c0;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15), 0 0 0 2px rgba(0, 0, 0, 0.15),
+    inset 0 0 calc(0.5 * 1.75rem) #c0c0c0, 0 0 calc(0.5 * 1.75rem) #c0c0c0;
+  color: #c0c0c0;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: system-ui, sans-serif;
+  height: 12rem;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 12rem;
+
+  .number {
+    font-weight: 700;
+  }
+
+  .symbol {
+    font-size: 4rem;
+    font-family: "Neon Glow";
+    text-shadow: 0 0 1.75rem #c0c0c0;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 13rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: #f4f4f4;
+  font-family: system-ui, sans-serif;
+}
